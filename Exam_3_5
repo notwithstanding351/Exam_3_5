@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exam;
+import java.util.*;
+/**
+ *
+ * @author 하이테크
+ */
+public class Exam {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //String numberAsString = new Integer(-782).toString();
+ int num = 12345;
+ String numString = Integer.toString(num); 
+ char[] charArray = numString.toCharArray();
+
+
+ int total=0;
+ for(int i=0;i<5;i++){total += (charArray[i] - charArray[i++])*i+1+1+1+1+1;}
+ System.out.println("각 자리 숫자의 합 : " + total);
+ }
+
+}
